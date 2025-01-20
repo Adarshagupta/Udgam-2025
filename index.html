@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Authentication System</title>
+    <title>Login - Udgam 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -29,62 +29,93 @@
         }
     </script>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 min-h-screen flex items-center justify-center p-4">
-    <div class="w-full max-w-md">
-        <!-- Theme Toggle -->
-        <div class="flex justify-end mb-4">
-            <button onclick="toggleDarkMode()" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700">
-                <svg class="w-6 h-6 dark:hidden" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                </svg>
-                <svg class="w-6 h-6 hidden dark:block text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
-                </svg>
-            </button>
+<body class="bg-gray-100 dark:bg-gray-900 min-h-screen flex relative">
+    <!-- Background Image -->
+    <div class="fixed inset-0 -z-10">
+        <div class="absolute inset-0 bg-black/30 dark:bg-black/50"></div>
+       
+    </div>
+    
+    <!-- Left Side - Udgam Info -->
+    <div class="hidden lg:flex lg:w-[60%] relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-primary-600/40 to-primary-900/40 z-10"></div>
+        <img src="https://srmap.edu.in/wp-content/uploads/2024/03/DSC00096-scaled.jpg" 
+             alt="Udgam Dance" 
+             class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-20 p-12 text-white flex flex-col justify-center backdrop-blur-sm bg-black/20">
+            <h1 class="text-5xl font-bold mb-4">UDGAM 2025</h1>
+            <p class="text-xl mb-6">SRM University AP's Annual Cultural Festival</p>
+            <div class="space-y-4 text-lg">
+                <p>🎭 Experience the grandest cultural extravaganza</p>
+                <p>🎨 Art, Music, Dance & Theatre</p>
+                <p>🏆 Competitions & Workshops</p>
+                <p>🌟 Celebrity Performances</p>
+                <p>🤝 Network with talented peers</p>
+            </div>
+            <div class="mt-8 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
+                <p class="text-lg font-semibold">Join us in celebrating creativity, culture, and talent at SRM University AP's most anticipated event of the year!</p>
+            </div>
         </div>
+    </div>
 
-        <!-- Login Form -->
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-            <!-- Logo -->
-            <div class="flex justify-center mb-8">
-                <img src="https://srmap.edu.in/wp-content/uploads/2019/11/SRMAP-Logo-2.png" 
-                     alt="SRMAP Logo" 
-                     class="h-16 w-auto">
+    <!-- Right Side - Login Form -->
+    <div class="w-full lg:w-[40%] flex items-center justify-center p-4">
+        <div class="w-full max-w-md">
+            <!-- Theme Toggle -->
+            <div class="flex justify-end mb-4">
+                <button onclick="toggleDarkMode()" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700">
+                    <svg class="w-6 h-6 dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg class="w-6 h-6 hidden dark:block text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
             </div>
 
-            <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Welcome Back</h2>
-                <p class="text-gray-600 dark:text-gray-400 mt-2">Please sign in to your account</p>
-            </div>
-
-            <form>
-                <div class="space-y-4">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
-                        <input type="email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Password</label>
-                        <input type="password" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <label class="flex items-center">
-                            <input type="checkbox" class="rounded border-gray-300 text-primary-600 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700">
-                            <span class="ml-2 text-sm text-gray-600 dark:text-gray-400">Remember me</span>
-                        </label>
-                        <a href="forgot-password.html" class="text-sm text-primary-600 hover:text-primary-500 dark:text-primary-400">Forgot password?</a>
-                    </div>
-                    <button type="submit" class="w-full bg-primary-600 text-white py-2 px-4 rounded-lg hover:bg-primary-700 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-colors duration-300">
-                        Sign In
-                    </button>
+            <!-- Login Form -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+                <!-- Logo -->
+                <div class="flex justify-center mb-8">
+                    <img src="https://srmap.edu.in/wp-content/uploads/2019/11/SRMAP-Logo-2.png" 
+                         alt="SRMAP Logo" 
+                         class="h-16 w-auto">
                 </div>
-            </form>
 
-            <div class="mt-6 text-center">
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                    Don't have an account? 
-                    <a href="register.html" class="text-primary-600 hover:text-primary-500 dark:text-primary-400">Sign up</a>
-                </p>
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Welcome Back</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">Please sign in to your account</p>
+                </div>
+
+                <form>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                            <input type="email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Password</label>
+                            <input type="password" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-primary-600 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700">
+                                <span class="ml-2 text-sm text-gray-600 dark:text-gray-400">Remember me</span>
+                            </label>
+                            <a href="forgot-password.html" class="text-sm text-primary-600 hover:text-primary-500 dark:text-primary-400">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="w-full bg-primary-600 text-white py-2 px-4 rounded-lg hover:bg-primary-700 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-colors duration-300">
+                            Sign In
+                        </button>
+                    </div>
+                </form>
+
+                <div class="mt-6 text-center">
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Don't have an account? 
+                        <a href="register.html" class="text-primary-600 hover:text-primary-500 dark:text-primary-400">Sign up</a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
